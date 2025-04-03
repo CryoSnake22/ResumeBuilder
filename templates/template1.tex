@@ -1,0 +1,256 @@
+\documentclass[10pt, letterpaper]{article}
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=2 cm,
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage{etoolbox}
+\usepackage[
+    pdftitle={<< name | default("Resume") >>},
+    pdfauthor={<< name | default("Candidate") >>},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% Pre-define the environments before document starts
+\makeatletter
+\newenvironment{highlights}{%
+    \begin{itemize}[
+        topsep=0.10 cm,%
+        parsep=0.10 cm,%
+        partopsep=0pt,%
+        itemsep=0pt,%
+        leftmargin=0.4 cm + 10pt%
+    ]
+}{%
+    \end{itemize}%
+}
+
+\newenvironment{onecolentry}{%
+    \begin{adjustwidth}{0.2 cm}{0.2 cm}%
+}{%
+    \end{adjustwidth}%
+}
+
+\newenvironment{twocolentry}[2][]{%
+    \begin{onecolentry}%
+    \def\secondColumn{#2}%
+    \begin{paracol}{2}%
+}{%
+    \switchcolumn%
+    \raggedleft%
+    \secondColumn%
+    \end{paracol}%
+    \end{onecolentry}%
+}
+
+\newenvironment{header}{%
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}%
+}{%
+    \par\kern\topsep%
+}
+\makeatother
+
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0cm}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3 cm}{0.2 cm}
+\renewcommand\labelitemi{$\circ$}
+
+\newcommand{\placelastupdatedtext}{%
+  \AddToShipoutPictureFG*{%
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{\small\color{gray}\textit{Last updated in << last_updated | default("April 2025") >>}}}}
+    }%
+  }%
+
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{%
+  \hrefWithoutArrow{#1}{%
+    \ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}%
+  }%
+}
+
+\begin{document}
+\placelastupdatedtext
+\newcommand{\AND}{\leavevmode\unskip
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{}
+
+% Header with Name and Contact Information
+\begin{header}
+    \textbf{\fontsize{24 pt}{24 pt}\selectfont << name >>}
+
+    \vspace{0.3 cm}
+
+    \normalsize
+    <% if contact.location %>
+    \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}<< contact.location >>}%
+    <% endif %>
+    <% if contact.email %>
+    \AND
+    \mbox{\hrefWithoutArrow{mailto:<< contact.email >>}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}<< contact.email >>}}%
+    <% endif %>
+    <% if contact.phone %>
+    \AND
+    \mbox{\hrefWithoutArrow{tel:<< contact.phone >>}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}<< contact.phone >>}}%
+    <% endif %>
+    <% if contact.linkedin %>
+    \AND
+    \mbox{\hrefWithoutArrow{https://linkedin.com/in/<< contact.linkedin >>}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}<< contact.linkedin >>}}%
+    <% endif %>
+    <% if contact.github %>
+    \AND
+    \mbox{\hrefWithoutArrow{https://github.com/<< contact.github >>}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}<< contact.github >>}}%
+    <% endif %>
+\end{header}
+
+\vspace{0.3 cm - 0.3 cm}
+
+<# Summary Section #>
+<% if summary %>
+\section{Summary}
+\begin{onecolentry}
+    << summary >>
+\end{onecolentry}
+<% endif %>
+
+<# Education Section #>
+<% if education %>
+\section{Education}
+<% for edu in education %>
+\begin{twocolentry}{
+\textit{ << edu.start_date|default('') >> }<% if edu.start_date and edu.end_date %> -- <% endif %>\textit{ << edu.end_date|default('Present') >> }}
+    \textbf{ << edu.school >> }\\
+    \textit{ << edu.degree >> }<% if edu.gpa %> --- GPA: << edu.gpa >><% endif %><% if edu.location %>\\<< edu.location >><% endif %>
+\end{twocolentry}
+\vspace{0.10 cm}
+<% endfor %>
+<% endif %>
+
+<# Experience Section #>
+<% if experience %>
+\section{Experience}
+<% for exp in experience %>
+\begin{twocolentry}{\textit{ <% if exp.location %><< exp.location >><% endif %><% if exp.location %> \hspace{0.5em}<% endif %><< exp.start_date|default('') >><% if exp.start_date and exp.end_date %> -- <% endif %><< exp.end_date|default('Present') >> }}
+    \textbf{ << exp.title >> }\\
+    \textit{ << exp.company >> }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        <% for bullet in exp.bullets %>
+        \item << bullet >>
+        <% endfor %>
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+<% endfor %>
+<% endif %>
+
+<# Projects Section #>
+<% if projects %>
+\section{Projects}
+<% for proj in projects %>
+\begin{twocolentry}{\textit{\href{ << proj.link|default('#') >> }{ << proj.link|default('') >> }}}
+    \textbf{ << proj.name >> }\\
+    \textit{ << proj.technologies >> }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item << proj.description >>
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+<% endfor %>
+<% endif %>
+
+<# Skills Section #>
+<% if skills %>
+\section{Skills}
+\begin{onecolentry}
+    <% if skills.programming_languages %>
+    \textbf{Languages:} << skills.programming_languages | join(", ") >>\\
+    <% endif %>
+    <% if skills.frameworks %>
+    \textbf{Frameworks:} << skills.frameworks | join(", ") >>\\
+    <% endif %>
+    <% if skills.tools %>
+    \textbf{Tools:} << skills.tools | join(", ") >>\\
+    <% endif %>
+\end{onecolentry}
+<% endif %>
+
+<# Certifications Section #>
+<% if certifications %>
+\section{Certifications}
+<% for cert in certifications %>
+\begin{twocolentry}{\textit{ << cert.date|default('') >> }}
+    \textbf{ << cert.name >> }\\
+    \textit{ << cert.issuer >> }
+\end{twocolentry}
+\vspace{0.10 cm}
+<% endfor %>
+<% endif %>
+
+<# Languages Section #>
+<% if languages %>
+\section{Languages}
+\begin{onecolentry}
+    \begin{highlights}
+    <% for lang in languages %>
+        \item << lang.language >> - << lang.level >>
+    <% endfor %>
+    \end{highlights}
+\end{onecolentry}
+<% endif %>
+
+<# Interests Section #>
+<% if interests %>
+\section{Interests}
+\begin{onecolentry}
+    << interests | join(", ") >>
+\end{onecolentry}
+<% endif %>
+
+\end{document}
