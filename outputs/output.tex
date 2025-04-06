@@ -61,17 +61,21 @@
     \end{adjustwidth}%
 }
 
-\newenvironment{twocolentry}[2][]{%
+% --- New definition of twocolentry using minipages ---
+\newenvironment{twocolentry}[1]{%
     \begin{onecolentry}%
-    \def\secondColumn{#2}%
-    \begin{paracol}{2}%
+    \def\twocolentryarg{#1}%
+    \noindent
+    \begin{minipage}[t]{0.68\textwidth} % Left column (wraps long text)
 }{%
-    \switchcolumn%
-    \raggedleft%
-    \secondColumn%
-    \end{paracol}%
+    \end{minipage}\hfill%
+    \begin{minipage}[t]{0.30\textwidth} % Right column (aligned content)
+      \raggedleft\twocolentryarg
+    \end{minipage}%
+    \vspace{0.2cm}%
     \end{onecolentry}%
 }
+% --- End new definition ---
 
 \newenvironment{header}{%
     \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}%
@@ -139,19 +143,28 @@ wherever and whenever possible.
 \end{onecolentry}
 
 \section{Education}
-\begin{twocolentry}{\textit{ 2024 } -- \textit{ Present }}
-    \textbf{ University of Ottawa }\\
-    \textit{ Bachelor’s of Mathematics }\end{twocolentry}
+\begin{twocolentry}{%
+\textit{2024 }--\textit{Present} \\[0.1cm]
+\textit{}%
+}
+    \textbf{University of Ottawa }\\
+    \textit{Bachelor’s of Mathematics }\end{twocolentry}
 \vspace{0.10 cm}
-\begin{twocolentry}{\textit{ 2019 } -- \textit{ 2022 }}
-    \textbf{ Cégep de Sainte-Foy }\\
-    \textit{ Music, Jazz piano }\end{twocolentry}
+\begin{twocolentry}{%
+\textit{2019 }--\textit{2022} \\[0.1cm]
+\textit{}%
+}
+    \textbf{Cégep de Sainte-Foy }\\
+    \textit{Music, Jazz piano }\end{twocolentry}
 \vspace{0.10 cm}
 
 \section{Experience}
-\begin{twocolentry}{\textit{ Ottawa, ON \hspace{0.5em}2024-08 -- Present }}
-    \textbf{ Web developer/designer }\\
-    \textit{ Laurier Computers }
+\begin{twocolentry}{%
+\textit{2024-08 }--\textit{Present} \\[0.1cm]
+\textit{Ottawa, ON}%
+}
+    \textbf{Web developer/designer }\\
+    \textit{Laurier Computers }
 \end{twocolentry}
 \vspace{0.10 cm}
 \begin{onecolentry}
@@ -162,9 +175,12 @@ wherever and whenever possible.
     \end{highlights}
 \end{onecolentry}
 \vspace{0.2 cm}
-\begin{twocolentry}{\textit{ Ottawa, ON \hspace{0.5em}2023-12 -- 2024-08 }}
-    \textbf{ Server and Concierge }\\
-    \textit{ Amica the Glebe }
+\begin{twocolentry}{%
+\textit{2023-12 }--\textit{2024-08} \\[0.1cm]
+\textit{Ottawa, ON}%
+}
+    \textbf{Server and Concierge }\\
+    \textit{Amica the Glebe }
 \end{twocolentry}
 \vspace{0.10 cm}
 \begin{onecolentry}
@@ -175,9 +191,12 @@ wherever and whenever possible.
     \end{highlights}
 \end{onecolentry}
 \vspace{0.2 cm}
-\begin{twocolentry}{\textit{ Montreal, QC \hspace{0.5em}2022-12 -- 2023-08 }}
-    \textbf{ Server }\\
-    \textit{ Alto restaurant }
+\begin{twocolentry}{%
+\textit{2022-12 }--\textit{2023-08} \\[0.1cm]
+\textit{Montreal, QC}%
+}
+    \textbf{Server }\\
+    \textit{Alto restaurant }
 \end{twocolentry}
 \vspace{0.10 cm}
 \begin{onecolentry}
@@ -188,9 +207,12 @@ wherever and whenever possible.
     \end{highlights}
 \end{onecolentry}
 \vspace{0.2 cm}
-\begin{twocolentry}{\textit{ Quebec, QC \hspace{0.5em}2020-09 -- 2022-06 }}
-    \textbf{ Technician and Customer support }\\
-    \textit{ MontVR }
+\begin{twocolentry}{%
+\textit{2020-09 }--\textit{2022-06} \\[0.1cm]
+\textit{Quebec, QC}%
+}
+    \textbf{Technician and Customer support }\\
+    \textit{MontVR }
 \end{twocolentry}
 \vspace{0.10 cm}
 \begin{onecolentry}
@@ -214,9 +236,9 @@ wherever and whenever possible.
 \end{onecolentry}
 
 \section{Certifications}
-\begin{twocolentry}{\textit{ 2024 }}
-    \textbf{ Comptia A+ Certification }\\
-    \textit{ Comptia }
+\begin{twocolentry}{\textit{2024}}
+    \textbf{Comptia A+ Certification }\\
+    \textit{Comptia }
 \end{twocolentry}
 \vspace{0.10 cm}
 

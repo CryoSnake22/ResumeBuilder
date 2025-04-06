@@ -61,17 +61,21 @@
     \end{adjustwidth}%
 }
 
-\newenvironment{twocolentry}[2][]{%
+% --- New definition of twocolentry using minipages ---
+\newenvironment{twocolentry}[1]{%
     \begin{onecolentry}%
-    \def\secondColumn{#2}%
-    \begin{paracol}{2}%
+    \def\twocolentryarg{#1}%
+    \noindent
+    \begin{minipage}[t]{0.68\textwidth} % Left column (wraps long text)
 }{%
-    \switchcolumn%
-    \raggedleft%
-    \secondColumn%
-    \end{paracol}%
+    \end{minipage}\hfill%
+    \begin{minipage}[t]{0.30\textwidth} % Right column (aligned content)
+      \raggedleft\twocolentryarg
+    \end{minipage}%
+    \vspace{0.2cm}%
     \end{onecolentry}%
 }
+% --- End new definition ---
 
 \newenvironment{header}{%
     \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}%
@@ -158,10 +162,12 @@
 <% if education %>
 \section{Education}
 <% for edu in education %>
-\begin{twocolentry}{
-\textit{ << edu.start_date|default('') >> }<% if edu.start_date and edu.end_date %> -- <% endif %>\textit{ << edu.end_date|default('Present') >> }}
-    \textbf{ << edu.school >> }\\
-    \textit{ << edu.degree >> }<% if edu.gpa %> --- GPA: << edu.gpa >><% endif %><% if edu.location %>\\<< edu.location >><% endif %>
+\begin{twocolentry}{%
+\textit{<< edu.start_date|default('') >> }<% if edu.start_date and edu.end_date %>--<% endif %>\textit{<< edu.end_date|default('Present') >>} \\[0.1cm]
+\textit{<< edu.location >>}%
+}
+    \textbf{<< edu.school >> }\\
+    \textit{<< edu.degree >> }<% if edu.gpa %> --- GPA: << edu.gpa >> <% endif %>
 \end{twocolentry}
 \vspace{0.10 cm}
 <% endfor %>
@@ -171,9 +177,12 @@
 <% if experience %>
 \section{Experience}
 <% for exp in experience %>
-\begin{twocolentry}{\textit{ <% if exp.location %><< exp.location >><% endif %><% if exp.location %> \hspace{0.5em}<% endif %><< exp.start_date|default('') >><% if exp.start_date and exp.end_date %> -- <% endif %><< exp.end_date|default('Present') >> }}
-    \textbf{ << exp.title >> }\\
-    \textit{ << exp.company >> }
+\begin{twocolentry}{%
+\textit{<< exp.start_date|default('') >> }<% if exp.start_date and exp.end_date %>--<% endif %>\textit{<< exp.end_date|default('Present') >>} \\[0.1cm]
+\textit{<< exp.location >>}%
+}
+    \textbf{<< exp.title >> }\\
+    \textit{<< exp.company >> }
 \end{twocolentry}
 \vspace{0.10 cm}
 \begin{onecolentry}
@@ -191,9 +200,9 @@
 <% if projects %>
 \section{Projects}
 <% for proj in projects %>
-\begin{twocolentry}{\textit{\href{ << proj.link|default('#') >> }{ << proj.link|default('') >> }}}
-    \textbf{ << proj.name >> }\\
-    \textit{ << proj.technologies >> }
+\begin{twocolentry}{\textit{\href{<< proj.link|default('#') >>}{<< proj.link|default('') >>}}}
+    \textbf{<< proj.name >> }\\
+    \textit{<< proj.technologies >> }
 \end{twocolentry}
 \vspace{0.10 cm}
 \begin{onecolentry}
@@ -225,9 +234,9 @@
 <% if certifications %>
 \section{Certifications}
 <% for cert in certifications %>
-\begin{twocolentry}{\textit{ << cert.date|default('') >> }}
-    \textbf{ << cert.name >> }\\
-    \textit{ << cert.issuer >> }
+\begin{twocolentry}{\textit{<< cert.date|default('') >>}}
+    \textbf{<< cert.name >> }\\
+    \textit{<< cert.issuer >> }
 \end{twocolentry}
 \vspace{0.10 cm}
 <% endfor %>
