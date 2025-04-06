@@ -7,3 +7,10 @@ class PDFextract:
 
     def extract(self, filename):
         return extract_text(filename)
+
+
+if __name__ == "__main__":
+    extract = PDFextract()
+    data = extract.extract("bhavna_resume.pdf")
+    with open("bhavna_output.txt", "w") as f:
+        f.write(data)

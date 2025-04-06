@@ -1,85 +1,91 @@
-name: Charles-Antoine Pouliot
+name: Bhavna Yadav
+
 contact:
-  email: capdev22@gmail.com
-  phone: 581-996-7900
-location: Ottawa, ON
-summary: |
-  An aspiring software engineer with a diverse background and a love for learning looking for experience 
-  wherever and whenever possible.
+  email: bhavna15yadav@gmail.com
+  phone: +1 (438) 270-7547
+  location: Ontario
+
 education:
-  - degree: Bachelor’s of Mathematics
-    school: University of Ottawa
-    start_date: 2024
-    end_date: Present
-  - degree: Music, Jazz piano
-    school: Cégep de Sainte-Foy
-    start_date: 2019
-    end_date: 2022
-certifications:
-  - name: Comptia A+ Certification
-    issuer: Comptia
-    date: 2024
+  - degree: LL.M.
+    school: University Of Montreal
+    location: Montreal, Canada
+  - degree: LL.B.
+    school: CLC, Delhi University
+    location: Delhi, India
+  - degree: Bachelor of Arts in Political Science (Hons.)
+    school: Hindu College, Delhi University
+    location: Delhi, India
+
 experience:
-  - title: Web developer/designer
-    company: Laurier Computers
-    location: Ottawa, ON
-    start_date: 2024-08
+  - title: Administrative Coordinator \& Social Media Manager
+    company: Medi Spa Ottawa
+    location: Ottawa, Ontario
+    start_date: 2023-05
     end_date: Present
     bullets:
-      - Designed the company’s website, focusing on user experience.
-      - Developed the website as a Next.js app using React, ensuring scalability.
-      - Provided technical support for customers, addressing their queries and resolving issues promptly.
-  - title: Server and Concierge
-    company: Amica the Glebe
-    location: Ottawa, ON
+      - Oversee and manage daily administrative operations, ensuring seamless coordination between departments and optimizing workflow efficiency.
+      - Coordinate technician schedules, appointment bookings, and front desk operations, improving service efficiency by 30\%.
+      - Implemented a customer service strategy that increased client retention by 30\% through efficient response handling and issue resolution.
+      - Led a social media strategy that boosted engagement by 50\% and increased online appointment bookings by 20\%.
+      - Maintain and update the company’s website, ensuring accessibility and accuracy of services.
+  - title: Administrative Coordinator (2-Month Contract)
+    company: Athens Rugs Ltd.
+    location: Ottawa, Ontario
     start_date: 2023-12
-    end_date: 2024-08
+    end_date: 2024-01
     bullets:
-      - Tailored dining experiences for residents.
-      - Became concierge in the month of May 2024, taking on administrative duties.
-      - Acted as an intermediary between residents, family, resources and management.
-  - title: Server
-    company: Alto restaurant
-    location: Montreal, QC
-    start_date: 2022-12
-    end_date: 2023-08
+      - Managed office operations, including documentation, scheduling, and data entry, enhancing workflow efficiency.
+      - Processed customer inquiries and coordinated order fulfillment, reducing processing time by 15\%.
+      - Assisted in financial record-keeping and maintained compliance with company policies.
+  - title: Research Assistant to Dr. Anita Yadav, Assistant Sr. Professor
+    company: CLC, Delhi University
+    location: Delhi, India
+    start_date: 2022-01
+    end_date: 2022-08
     bullets:
-      - Made extensive use of the Maitre'D POS system.
-      - Assisted in processing an average of 200 online/phone orders per day.
-      - Served customers, providing a warm and welcoming experience.
-  - title: Technician and Customer support
-    company: MontVR
-    location: Quebec, QC
-    start_date: 2020-09
-    end_date: 2022-06
+      - Conducted research and administrative coordination for a government-funded project under the Ministry of Urban Affairs, India.
+      - Organized and facilitated academic seminars, conferences, and research paper competitions, improving institutional engagement.
+  - title: Legal Intern
+    company: Adv. Balendu Shekhar (Additional Standing Counsel, GOI)
+    location: Delhi, India
+    start_date: 2021-09
+    end_date: 2021-12
     bullets:
-      - Made repairs on VR headsets and controllers.
-      - Troubleshot hardware and software issues in computers, replacing components when necessary.
-      - Wrote documentation on bugs and internal procedures.
-      - Increased the efficiency of operations company-wide by writing scripts to limit hardware failure due to stress.
-      - Responded to customer inquiries using the Zammad issue tracking system, escalating them to the next level when necessary.
-      - Assisted customers in understanding and utilizing virtual reality technology.
-projects: []
+      - Coordinated case management and documentation for arbitration disputes involving the National Highway Authority of India (NHAI).
+      - Conducted legal research using SCC, Manu Patra, and LexisNexis to support case preparation and streamline legal operations.
+  - title: Legal Intern
+    company: Hon’ble Madame Justice Sangita Dhingra Sehgal (President, SCDRC)
+    location: Delhi, India
+    start_date: 2021-03
+    end_date: 2021-06
+    bullets:
+      - Managed legal documentation, case filing, and research support for consumer rights litigation.
+      - Maintained online legal databases and updated case progress on government portals.
+
+projects:
+  - name: Changing Dynamics of Liberty in India
+    description: |
+      Published paper in a national law compilation initiated by former Chief Justice of India, Justice Dipak Misra (2020).
+    technologies: []
+    link:
+
 skills:
-  programming_languages:
-    - Lua
-    - Javascript
-    - C++
-  frameworks:
-    - React
-    - Next.js
+  programming_languages: []
+  frameworks: []
   tools:
-    - Git
-    - Linux
-    - Shell scripting
-    - Neovim
+    - Microsoft Office Suite (Word, Excel, Outlook)
+    - Google Workspace
+    - Website management tools
+    - Social media strategy
+
 languages:
-  - language: French
-    level: Fluent
   - language: English
     level: Fluent
+  - language: Hindi
+    level: Fluent
+
 interests:
-  - Technology
-  - Mathematics
-  - Music
-  - Machine Learning
+  - Administrative Coordination
+  - Project Management
+  - Customer Relations
+  - Social Media \& Marketing
