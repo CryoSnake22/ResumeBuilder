@@ -5,7 +5,10 @@ contact:
   phone: 581-996-7900
 
 summary: |
-  An aspiring aerospace engineer with a strong foundation in mathematics and problem-solving skills, looking to leverage machine learning to enhance AI model quality. Adept in applying engineering principles and eager to contribute to innovative projects in a remote environment.
+  Innovative software engineer passionate about leveraging technology to improve user experiences.
+  Proficient in modern web development frameworks like Next.js and React, with a strong foundation 
+  in mathematics and an eagerness to solve complex problems. Seeking opportunities to contribute 
+  cutting-edge solutions in a collaborative environment.
 
 education:
   - degree: Bachelor’s of Mathematics
@@ -14,45 +17,47 @@ education:
     school: Cégep de Sainte-Foy
 
 experience:
-  - title: Web Developer/Designer
-    title_override: Software Engineer
+  - title_override: Frontend Developer
+    title: Web developer/designer
     company: Laurier Computers
     location: Ottawa, ON
     start_date: September 2024
     bullets:
-      - Designed and developed the company’s website using Next.js and React, enhancing user experience and ensuring system scalability.
-      - Provided comprehensive technical support, quickly resolving customer issues to improve user satisfaction.
-      - Utilized deductive reasoning in debugging and enhancing application performance.
-
-  - title: Server and Concierge
-    title_override: Customer Relations Specialist
+      - Enhanced the company’s website with an innovative design focused on optimizing user experience.
+      - Developed a scalable Next.js app using React, improving client interaction efficiency.
+      - Implemented user feedback loops, enhancing technical support resolution times and customer satisfaction.
+  
+  - title_override: Customer Experience Specialist
+    title: Server and Concierge
     company: Amica the Glebe
     location: Ottawa, ON
     start_date: December 2023
     end_date: August 2024
     bullets:
-      - Tailored dining experiences and provided administrative support, enhancing resident satisfaction.
-      - Became concierge, efficiently managing administrative tasks and communication.
-      - Facilitated effective communication between residents and management, ensuring timely service delivery.
+      - Customized dining experiences for residents, improving satisfaction scores.
+      - Transitioned to concierge role, efficiently handling key administrative functions and improving service delivery.
+      - Facilitated communication between residents, families, and management, enhancing community engagement.
 
   - title: Server
-    company: Alto Restaurant
+    company: Alto restaurant
     location: Montreal, QC
     start_date: December 2022
     end_date: August 2023
     bullets:
-      - Managed high-volume order processing, using the Maitre'D POS system to optimize customer service.
-      - Enhanced customer experience by providing personalized service and attention to detail.
+      - Utilized the Maitre'D POS system effectively, processing an average of 200 orders per day.
+      - Strengthened customer relations by delivering exceptional service experiences consistently.
 
   - title: Technician and Customer Support
     company: MontVR
     start_date: September 2020
     end_date: June 2022
     bullets:
-      - Diagnosed and repaired VR hardware, reducing downtime by 30\%.
-      - Developed scripts to enhance operational efficiency and minimize hardware failure under stress.
-      - Documented and troubleshot complex technical issues, improving system reliability.
-      - Assisted customers in effectively using virtual reality technology, enhancing user experience.
+      - Conducted repairs on VR headsets, ensuring operational excellence and longevity.
+      - Diagnosed and resolved hardware/software issues, minimizing downtime and enhancing system performance.
+      - Authored comprehensive documentation on bugs and internal procedures, aiding in knowledge sharing.
+      - Improved operational efficiency across the company by scripting to reduce hardware failure rates.
+      - Provided expert customer assistance via the Zammad issue tracking system, improving support processes.
+      - Guided customers in adopting virtual reality technology, facilitating increased user adoption.
 
 skills:
   programming_languages:
@@ -67,10 +72,6 @@ skills:
     - Linux
     - Shell scripting
     - Neovim
-  additional_skills:
-    - Problem-Solving
-    - Technical Support
-    - Logical Reasoning
 
 certifications:
   - name: Comptia A+ Certification
@@ -80,14 +81,10 @@ certifications:
 
 languages:
   - language: French
-  - language: English (Fluent)
+  - language: English
 
 interests:
-  - Aerospace Engineering
-  - Machine Learning
   - Technology
   - Mathematics
   - Music
-
-tone: Innovative and Precision-focused
-industry: Aerospace Engineering
+  - Machine Learning

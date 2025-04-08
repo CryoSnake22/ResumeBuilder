@@ -1,4 +1,4 @@
-from config import BASE_DIR, DATA_DIR, ASSET_DIR
+from config import DATA_DIR, ASSET_DIR
 from load_resume import RenderToLaTeX, compile_pdf
 from pdf_preprocessing import parse_pdf
 from yaml_processing import generate_yaml, optimize_yaml
@@ -18,8 +18,8 @@ def main():
     txt_path = parse_pdf(pdf_path, filename)
 
     job_description = None
-    with open(DATA_DIR / "job_description1.txt") as f:
-        job_description = f.read()
+    # with open(DATA_DIR / "job_description1.txt") as f:
+    # job_description = f.read()
 
     # If there isnt a yaml file yet, you generate one and optimize it
     if not (os.path.isfile(DATA_DIR / f"{filename}.yaml")):
