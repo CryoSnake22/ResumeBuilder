@@ -1,6 +1,6 @@
 name: Charles-Antoine Pouliot
 
-contact:
+contact: 
   email: capdev22@gmail.com
   phone: 581-996-7900
 
@@ -8,81 +8,76 @@ summary: |
   An aspiring software engineer with a diverse background and a love for learning looking for experience 
   wherever and whenever possible.
 
-education:
+education: 
   - degree: Bachelor’s of Mathematics
     school: University of Ottawa
-
   - degree: Music, Jazz piano
     school: Cégep de Sainte-Foy
 
-certifications:
-  - name: Comptia A+ Certification
-    date: 2024
-
-experience:
+experience: 
   - title: Web developer/designer
     company: Laurier Computers
     location: Ottawa, ON
-    start_date: 2024-09
-    end_date: Present
-    bullets:
+    start_date: September 2024
+    bullets: 
       - Designed the company’s website, focusing on user experience.
       - Developed the website as a Next.js app using React, ensuring scalability.
       - Provided technical support for customers, addressing their queries and resolving issues promptly.
-
   - title: Server and Concierge
     company: Amica the Glebe
     location: Ottawa, ON
-    start_date: 2023-12
-    end_date: 2024-08
-    bullets:
+    start_date: December 2023
+    end_date: August 2024
+    bullets: 
       - Tailored dining experiences for residents.
       - Became concierge in the month of May 2024, taking on administrative duties.
       - Acted as an intermediary between residents, family, resources and management.
-
   - title: Server
     company: Alto restaurant
     location: Montreal, QC
-    start_date: 2022-12
-    end_date: 2023-08
-    bullets:
+    start_date: December 2022
+    end_date: August 2023
+    bullets: 
       - Made extensive use of the Maitre'D POS system.
       - Assisted in processing an average of 200 online/phone orders per day.
       - Served customers, providing a warm and welcoming experience.
-
   - title: Technician and Customer support
     company: MontVR
-    start_date: 2020-09
-    end_date: 2022-06
-    bullets:
+    start_date: September 2020
+    end_date: June 2022
+    bullets: 
       - Made repairs on VR headsets and controllers.
       - Troubleshot hardware and software issues in computers, replacing components when necessary.
       - Wrote documentation on bugs and internal procedures.
-      - Increased the efficiency of operations company-wide by writing scripts to limit hardware failure due to stress.
-      - Responded to customer inquiries using the Zammad issue tracking system, escalating them to the next level when necessary.
+      - Increased the efficiency of operations company-wide by writing scripts to limit hardware failure 
+        due to stress.
+      - Responded to customer inquiries using the Zammad issue tracking system, escalating them to the next 
+        level when necessary.
       - Assisted customers in understanding and utilizing virtual reality technology.
 
-skills:
-  programming_languages:
+skills: 
+  programming_languages: 
     - Lua
     - Javascript (Web Development)
     - C++
-  frameworks:
+  frameworks: 
     - React
     - Next.js
-  tools:
+  tools: 
     - Git
     - Linux
     - Shell scripting
     - Neovim
 
-languages:
-  - language: French
-    level: unknown
-  - language: English
-    level: unknown
+certifications: 
+  - name: Comptia A+ Certification
+    date: 2024
 
-interests:
+languages: 
+  - language: French
+  - language: English
+
+interests: 
   - Technology
   - Mathematics
   - Music

@@ -23,6 +23,25 @@ def strip_markdown_code_fence(text):
     return text.strip()
 
 
+def escape_latex(text):
+    """
+    Escapes common LaTeX special characters in the input text.
+    """
+    # Define a mapping of special characters to their escaped versions.
+    replacements = {
+        "&": r"\&",
+        "%": r"\%",
+        "$": r"\$",
+        "#": r"\#",
+        "{": r"\{",
+        "}": r"\}",
+    }
+    # Iterate over the mapping and replace each character.
+    for char, escaped in replacements.items():
+        text = text.replace(char, escaped)
+    return text
+
+
 def generate_yaml(txt_path, filename):
     yaml_path = DATA_DIR / f"{filename}.yaml"
 
@@ -32,8 +51,11 @@ def generate_yaml(txt_path, filename):
     prompt = ASSISTANT_CONTEXT + resume_text
 
     response = client.responses.create(model="gpt-4o", input=prompt)
+
     output_text = response.output_text
     output_text = strip_markdown_code_fence(output_text)
+    output_text = escape_latex(output_text)
+
     with open(yaml_path, "w") as f:
         f.write(output_text)
     return yaml_path

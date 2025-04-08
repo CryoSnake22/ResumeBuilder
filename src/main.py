@@ -3,6 +3,7 @@ from load_resume import RenderToLaTeX, compile_pdf
 from pdf_preprocessing import parse_pdf
 from yaml_processing import generate_yaml
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 
@@ -16,9 +17,13 @@ def main():
 
     txt_path = parse_pdf(pdf_path, filename)
 
-    # yaml_path = generate_yaml(txt_path, filename)
+    if not (os.path.isfile(DATA_DIR / f"{filename}.yaml")):
+        yaml_path = generate_yaml(txt_path, filename)
+    else:
+        yaml_path = DATA_DIR / f"{filename}.yaml"
+
     # debugging:
-    yaml_path = DATA_DIR / "bhavna_resume.yaml"
+    # yaml_path = DATA_DIR / "bhavna_resume.yaml"
 
     # We have YAML data and we want to put it to LaTeX
 

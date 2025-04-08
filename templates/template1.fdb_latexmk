@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1743922159.06939 "/Users/charlo/Projects/Resume/templates/template1.tex" "template1.pdf" "template1" 1743922159.64553 2
-  "/Users/charlo/Projects/Resume/templates/template1.tex" 1743922158.98703 6871 ecccd16cc760f3fec7f7f7deb6195b3f ""
+["pdflatex"] 1744135550.43884 "/Users/charlo/Projects/Resume/templates/template1.tex" "template1.pdf" "template1" 1744135551.03456 2
+  "/Users/charlo/Projects/Resume/templates/template1.tex" 1744135550.34802 6857 b6533de94301fdf255fcd47e4a76d3ac ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -134,8 +134,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1743524872 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "template1.aux" 1743922159.55408 2369 bec348875c7d4a6e41d88f987d22b766 "pdflatex"
-  "template1.tex" 1743922158.98703 6871 ecccd16cc760f3fec7f7f7deb6195b3f ""
+  "template1.aux" 1744135550.93753 2369 bec348875c7d4a6e41d88f987d22b766 "pdflatex"
+  "template1.tex" 1744135550.34802 6857 b6533de94301fdf255fcd47e4a76d3ac ""
   (generated)
   "template1.aux"
   "template1.log"

@@ -163,7 +163,7 @@
 \section{Education}
 <% for edu in education %>
 \begin{twocolentry}{%
-\textit{<< edu.start_date|default('') >> }<% if edu.start_date and edu.end_date %>--<% endif %>\textit{<< edu.end_date|default('Present') >>} \\[0.1cm]
+\textit{<< edu.start_date|default('') >> }<% if edu.start_date and edu.end_date %>--<% endif %>\textit{<< edu.end_date|default('') >>} \\[0.1cm]
 \textit{<< edu.location >>}%
 }
     \textbf{<< edu.school >> }\\
@@ -178,7 +178,7 @@
 \section{Experience}
 <% for exp in experience %>
 \begin{twocolentry}{%
-\textit{<< exp.start_date|default('') >> }<% if exp.start_date and exp.end_date %>--<% endif %>\textit{<< exp.end_date|default('Present') >>} \\[0.1cm]
+\textit{<< exp.start_date|default('') >> }<% if exp.start_date and exp.end_date %>--<% endif %>\textit{<< exp.end_date|default('') >>} \\[0.1cm]
 \textit{<< exp.location >>}%
 }
     \textbf{<< exp.title >> }\\
