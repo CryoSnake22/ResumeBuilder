@@ -1,0 +1,7 @@
+# requirements.txt
+Jinja2==3.1.6
+openai==1.71.0
+pdfminer==20191125
+pdfminer_six==20250327
+PyYAML==6.0.2
+PyYAML==6.0.2

@@ -1,6 +1,7 @@
 from config import DATA_DIR, ASSET_DIR
 from load_resume import RenderToLaTeX, compile_pdf
 from pdf_preprocessing import parse_pdf
+from yaml_processing import generate_yaml
 
 
 def main():
@@ -10,7 +11,9 @@ def main():
     pdf_path = ASSET_DIR / f"{input_pdf}.pdf"
     txt_name = f"{input_pdf}.txt"
 
-    parse_pdf(pdf_path, txt_name)
+    txt_path = parse_pdf(pdf_path, txt_name)
+
+    yaml_path = generate_yaml(txt_path)
 
     # We have YAML data and we want to put it to LaTeX
     template_name = "template1.tex"
