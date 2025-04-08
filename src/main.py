@@ -18,7 +18,9 @@ def main():
     txt_path = parse_pdf(pdf_path, filename)
 
     if not (os.path.isfile(DATA_DIR / f"{filename}.yaml")):
+        print("Generating yaml file")
         yaml_path = generate_yaml(txt_path, filename)
+
     else:
         yaml_path = DATA_DIR / f"{filename}.yaml"
 
@@ -28,6 +30,7 @@ def main():
     # We have YAML data and we want to put it to LaTeX
 
     template_name = "template1.tex"
+    print("Rendering to LateX")
     tex_path = RenderToLaTeX(yaml_path, filename, template_name)
 
     # We want to Render the LaTeX to PDF

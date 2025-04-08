@@ -27,21 +27,16 @@ def RenderToLaTeX(yaml_path, filename, template_name) -> Path:
     template = env.get_template(template_name)
 
     # Load the YAML data into a dictionary
-    print(yaml_path)
     with open(yaml_path, "r") as f:
         data = yaml.safe_load(f)
 
     # Render the LaTeX template using the YAML data
-    print("Rendering YAML to LaTeX")
     rendered_tex = template.render(data)
-    print("Rendering Successful")
 
     # Write the rendered LaTeX to an output file
-    print(f"Writing to {tex_output}")
     with open(tex_output, "w") as f:
         f.write(rendered_tex)
 
-    print(f"Successfully generated {tex_output}")
     return tex_output
 
 

@@ -248,7 +248,7 @@
 \begin{onecolentry}
     \begin{highlights}
     <% for lang in languages %>
-        \item << lang.language >> - << lang.level >>
+        \item << lang.language >> <% if lang.level %>--<% endif %> << lang.level >>
     <% endfor %>
     \end{highlights}
 \end{onecolentry}

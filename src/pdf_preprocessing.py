@@ -8,5 +8,4 @@ def parse_pdf(pdf_path, filename):
     text = extract_text(pdf_path)
     with open(txt_path, "w") as f:
         f.write(text)
-    print(f"output pdf contents at: {txt_path}")
     return txt_path
