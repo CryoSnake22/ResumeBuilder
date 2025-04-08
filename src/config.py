@@ -9,3 +9,5 @@ ASSET_DIR = BASE_DIR / "assets"
 
 ASSISTANT_CONT_PATH = BASE_DIR / "private" / "assistant_context.txt"
 ASSISTANT_CONTEXT = open(ASSISTANT_CONT_PATH, "r").read()
+OPTI_CONT_PATH = BASE_DIR / "private" / "optimization_context.txt"
+OPTI_CONTEXT = open(OPTI_CONT_PATH, "r").read()

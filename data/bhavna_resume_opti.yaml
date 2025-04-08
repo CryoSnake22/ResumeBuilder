@@ -1,0 +1,90 @@
+name: Bhavna Yadav
+
+contact:
+  email: bhavna15yadav@gmail.com
+  phone: +1 (438) 270-7547
+  location: Ontario
+
+education:
+  - degree: LL.M.
+    school: University Of Montreal
+    location: Montreal, Canada
+  - degree: LL.B.
+    school: CLC, Delhi University
+    location: Delhi, India
+  - degree: Bachelor of Arts in Political Science (Hons.)
+    school: Hindu College, Delhi University
+    location: Delhi, India
+
+summary: |
+  Dedicated administrative and social media professional with strong expertise in optimizing workflow efficiency and enhancing customer engagement. Proven track record in improving client retention and increasing online presence through strategic planning and execution. Adept at leveraging legal education in administrative roles to ensure compliance and operational excellence.
+
+experience:
+  - title_override: Administrative \& Social Media Specialist
+    title: Administrative Coordinator \& Social Media Manager
+    company: Medi Spa Ottawa
+    location: Ottawa, Ontario
+    start_date: May 2023
+    bullets:
+      - Oversee and manage daily administrative operations, ensuring seamless coordination between departments and improving workflow efficiency by 30\%.
+      - Streamlined technician schedules, enhancing appointment booking efficiency and increasing service delivery by 30\%.
+      - Developed and implemented a customer service strategy that increased client retention by 30\% through proactive issue resolution and personalized service.
+      - Spearheaded a data-driven social media strategy that boosted engagement by 50\% and improved online appointment bookings by 20\%.
+      - Maintain and update the company’s website, ensuring accessibility, accuracy, and enhanced client interface.
+
+  - title_override: Administrative Specialist
+    title: Administrative Coordinator (2-Month Contract)
+    company: Athens Rugs Ltd.
+    location: Ottawa, Ontario
+    start_date: December 2023
+    end_date: January 2024
+    bullets:
+      - Managed comprehensive office operations, including documentation, scheduling, and data entry, increasing workflow efficiency by 20\%.
+      - Optimized order processing by effectively handling customer inquiries, reducing processing time by 15\%.
+      - Conducted financial record-keeping and ensured strict compliance with company policies and industry standards.
+
+  - title_override: Research and Event Coordinator
+    title: Research Assistant to Dr. Anita Yadav, Assistant Sr. Professor
+    company: CLC, Delhi University
+    start_date: January 2022
+    end_date: August 2022
+    bullets:
+      - Coordinated a government-funded research project with the Ministry of Urban Affairs, driving successful project milestones.
+      - Organized academic events, increasing institutional engagement and enhancing research visibility.
+
+  - title_override: Legal Administrative Intern
+    title: Legal Intern
+    company: Adv. Balendu Shekhar (Additional Standing Counsel, GOI)
+    location: Delhi, India
+    start_date: September 2021
+    end_date: December 2021
+    bullets:
+      - Managed critical case documentation and arbitration disputes, supporting efficient legal resolution for the National Highway Authority of India (NHAI).
+      - Conducted comprehensive legal research, streamlining case preparation and enhancing legal strategies.
+
+  - title_override: Legal Research Intern
+    title: Legal Intern
+    company: Hon’ble Madame Justice Sangita Dhingra Sehgal (President, SCDRC)
+    location: Delhi, India
+    start_date: March 2021
+    end_date: June 2021
+    bullets:
+      - Organized and managed legal documentation for consumer rights litigation, ensuring precise case filing and database accuracy.
+      - Maintained digital legal databases, facilitating updated case progress management on government portals.
+
+skills:
+  tools:
+    - Microsoft Office Suite (Word, Excel, Outlook)
+    - Google Workspace
+    - Website management tools
+  frameworks:
+    - Administrative Coordination
+    - Project Management
+    - Customer Relations
+    - Social Media Strategy and Execution
+
+languages:
+  - language: English
+    level: Fluent
+  - language: Hindi
+    level: Fluent

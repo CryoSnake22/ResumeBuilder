@@ -1,0 +1,93 @@
+name: Charles-Antoine Pouliot
+
+contact:
+  email: capdev22@gmail.com
+  phone: 581-996-7900
+
+summary: |
+  An aspiring aerospace engineer with a strong foundation in mathematics and problem-solving skills, looking to leverage machine learning to enhance AI model quality. Adept in applying engineering principles and eager to contribute to innovative projects in a remote environment.
+
+education:
+  - degree: Bachelor’s of Mathematics
+    school: University of Ottawa
+  - degree: Music, Jazz piano
+    school: Cégep de Sainte-Foy
+
+experience:
+  - title: Web Developer/Designer
+    title_override: Software Engineer
+    company: Laurier Computers
+    location: Ottawa, ON
+    start_date: September 2024
+    bullets:
+      - Designed and developed the company’s website using Next.js and React, enhancing user experience and ensuring system scalability.
+      - Provided comprehensive technical support, quickly resolving customer issues to improve user satisfaction.
+      - Utilized deductive reasoning in debugging and enhancing application performance.
+
+  - title: Server and Concierge
+    title_override: Customer Relations Specialist
+    company: Amica the Glebe
+    location: Ottawa, ON
+    start_date: December 2023
+    end_date: August 2024
+    bullets:
+      - Tailored dining experiences and provided administrative support, enhancing resident satisfaction.
+      - Became concierge, efficiently managing administrative tasks and communication.
+      - Facilitated effective communication between residents and management, ensuring timely service delivery.
+
+  - title: Server
+    company: Alto Restaurant
+    location: Montreal, QC
+    start_date: December 2022
+    end_date: August 2023
+    bullets:
+      - Managed high-volume order processing, using the Maitre'D POS system to optimize customer service.
+      - Enhanced customer experience by providing personalized service and attention to detail.
+
+  - title: Technician and Customer Support
+    company: MontVR
+    start_date: September 2020
+    end_date: June 2022
+    bullets:
+      - Diagnosed and repaired VR hardware, reducing downtime by 30\%.
+      - Developed scripts to enhance operational efficiency and minimize hardware failure under stress.
+      - Documented and troubleshot complex technical issues, improving system reliability.
+      - Assisted customers in effectively using virtual reality technology, enhancing user experience.
+
+skills:
+  programming_languages:
+    - Lua
+    - Javascript (Web Development)
+    - C++
+  frameworks:
+    - React
+    - Next.js
+  tools:
+    - Git
+    - Linux
+    - Shell scripting
+    - Neovim
+  additional_skills:
+    - Problem-Solving
+    - Technical Support
+    - Logical Reasoning
+
+certifications:
+  - name: Comptia A+ Certification
+    date: 2024
+  - name: Machine Learning Certification (Stanford)
+    date: 2025
+
+languages:
+  - language: French
+  - language: English (Fluent)
+
+interests:
+  - Aerospace Engineering
+  - Machine Learning
+  - Technology
+  - Mathematics
+  - Music
+
+tone: Innovative and Precision-focused
+industry: Aerospace Engineering

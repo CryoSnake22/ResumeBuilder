@@ -1,7 +1,7 @@
 import yaml
 import openai
 import re
-from config import BASE_DIR, ASSISTANT_CONTEXT, DATA_DIR
+from config import BASE_DIR, ASSISTANT_CONTEXT, DATA_DIR, OPTI_CONTEXT
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
@@ -59,3 +59,33 @@ def generate_yaml(txt_path, filename):
     with open(yaml_path, "w") as f:
         f.write(output_text)
     return yaml_path
+
+
+def optimize_yaml(yaml_path, filename, job_description=None):
+    with open(yaml_path, "r") as f:
+        yaml_text = f.read()
+    prompt = ""
+    if job_description:
+        prompt = (
+            OPTI_CONTEXT
+            + "JOB DESCRIPTION: \n\n"
+            + job_description
+            + "\n\n ORIGINAL RESUME YAML: ```yaml\n"
+            + yaml_text
+            + "\n```"
+        )
+    else:
+        prompt = (
+            OPTI_CONTEXT + "\n\n ORIGINAL RESUME YAML: ```yaml\n" + yaml_text + "\n```"
+        )
+
+    response = client.responses.create(model="gpt-4o", input=prompt)
+
+    output_text = response.output_text
+    output_text = strip_markdown_code_fence(output_text)
+    output_text = escape_latex(output_text)
+
+    yaml_opti_path = DATA_DIR / f"{filename}_opti.yaml"
+    with open(yaml_opti_path, "w") as f:
+        f.write(output_text)
+    return yaml_opti_path
