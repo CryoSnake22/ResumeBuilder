@@ -1,0 +1,259 @@
+\documentclass[10pt, letterpaper]{article}
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=2 cm,
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage{etoolbox}
+\usepackage[
+    pdftitle={TESTING NAMES},
+    pdfauthor={TESTING NAMES},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% Pre-define the environments before document starts
+\makeatletter
+\newenvironment{highlights}{%
+    \begin{itemize}[
+        topsep=0.10 cm,%
+        parsep=0.10 cm,%
+        partopsep=0pt,%
+        itemsep=0pt,%
+        leftmargin=0.4 cm + 10pt%
+    ]
+}{%
+    \end{itemize}%
+}
+
+\newenvironment{onecolentry}{%
+    \begin{adjustwidth}{0.2 cm}{0.2 cm}%
+}{%
+    \end{adjustwidth}%
+}
+
+% --- New definition of twocolentry using minipages ---
+\newenvironment{twocolentry}[1]{%
+    \begin{onecolentry}%
+    \def\twocolentryarg{#1}%
+    \noindent
+    \begin{minipage}[t]{0.68\textwidth} % Left column (wraps long text)
+}{%
+    \end{minipage}\hfill%
+    \begin{minipage}[t]{0.30\textwidth} % Right column (aligned content)
+      \raggedleft\twocolentryarg
+    \end{minipage}%
+    \vspace{0.2cm}%
+    \end{onecolentry}%
+}
+% --- End new definition ---
+
+\newenvironment{header}{%
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}%
+}{%
+    \par\kern\topsep%
+}
+\makeatother
+
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0cm}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3 cm}{0.2 cm}
+\renewcommand\labelitemi{$\circ$}
+
+\newcommand{\placelastupdatedtext}{%
+  \AddToShipoutPictureFG*{%
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{\small\color{gray}\textit{Last updated in April 2025}}}}
+    }%
+  }%
+
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{%
+  \hrefWithoutArrow{#1}{%
+    \ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}%
+  }%
+}
+
+\begin{document}
+\placelastupdatedtext
+\newcommand{\AND}{\leavevmode\unskip
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{}
+
+% Header with Name and Contact Information
+\begin{header}
+    \textbf{\fontsize{24 pt}{24 pt}\selectfont TESTING NAMES}
+
+    \vspace{0.3 cm}
+
+    \normalsize
+    \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}Ottawa, ON}%
+    \AND
+    \mbox{\hrefWithoutArrow{mailto:capdev22@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}capdev22@gmail.com}}%
+    \AND
+    \mbox{\hrefWithoutArrow{tel:581-996-7900}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}581-996-7900}}%
+\end{header}
+
+\vspace{0.3 cm - 0.3 cm}
+
+\section{Summary}
+\begin{onecolentry}
+    An aspiring software engineer with a diverse background and a love for learning looking for experience 
+wherever and whenever possible.
+
+\end{onecolentry}
+
+\section{Education}
+\begin{twocolentry}{%
+\textit{2024 }\textit{Present} \\[0.1cm]
+\textit{Ottawa, ON}%
+}
+    \textbf{University of Ottawa }\\
+    \textit{Bachelor’s of Mathematics }\end{twocolentry}
+\vspace{0.10 cm}
+\begin{twocolentry}{%
+\textit{2019 }--\textit{2022} \\[0.1cm]
+\textit{Quebec, QC}%
+}
+    \textbf{Cégep de Sainte-Foy }\\
+    \textit{Music, Jazz piano }\end{twocolentry}
+\vspace{0.10 cm}
+
+\section{Experience}
+\begin{twocolentry}{%
+\textit{2024-08 }--\textit{Present} \\[0.1cm]
+\textit{Ottawa, ON}%
+}
+    \textbf{Web developer/designer }\\
+    \textit{Laurier Computers }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Designed the company’s website, focusing on user experience.
+        \item Developed the website as a Next.js app using React, ensuring scalability.
+        \item Provided technical support for customers, addressing their queries and resolving issues promptly.
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{twocolentry}{%
+\textit{2023-12 }--\textit{2024-08} \\[0.1cm]
+\textit{Ottawa, ON}%
+}
+    \textbf{Server and Concierge }\\
+    \textit{Amica the Glebe }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Tailored dining experiences for residents.
+        \item Became concierge in the month of May 2024, taking on administrative duties.
+        \item Acted as an intermediary between residents, family, resources and management.
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{twocolentry}{%
+\textit{2022-12 }--\textit{2023-08} \\[0.1cm]
+\textit{Montreal, QC}%
+}
+    \textbf{Server }\\
+    \textit{Alto restaurant }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Made extensive use of the Maitre'D POS system.
+        \item Assisted in processing an average of 200 online/phone orders per day.
+        \item Served customers, providing a warm and welcoming experience.
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{twocolentry}{%
+\textit{2020-09 }--\textit{2022-06} \\[0.1cm]
+\textit{Quebec, QC}%
+}
+    \textbf{Technician and Customer support }\\
+    \textit{MontVR }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Made repairs on VR headsets and controllers.
+        \item Troubleshot hardware and software issues in computers, replacing components when necessary.
+        \item Wrote documentation on bugs and internal procedures.
+        \item Increased the efficiency of operations company-wide by writing scripts to limit hardware failure due to stress.
+        \item Responded to customer inquiries using the Zammad issue tracking system, escalating them to the next level when necessary.
+        \item Assisted customers in understanding and utilizing virtual reality technology.
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+
+
+\section{Skills}
+\begin{onecolentry}
+    \textbf{Languages:} Lua, Javascript (Web Development), C++\\
+    \textbf{Frameworks:} React, Next.js\\
+    \textbf{Tools:} Git, Linux, Shell scripting, Neovim\\
+\end{onecolentry}
+
+\section{Certifications}
+\begin{twocolentry}{\textit{2024}}
+    \textbf{Comptia A+ Certification }\\
+    \textit{Comptia }
+\end{twocolentry}
+\vspace{0.10 cm}
+
+\section{Languages}
+\begin{onecolentry}
+    \begin{highlights}
+        \item French - Native
+        \item English - Fluent
+    \end{highlights}
+\end{onecolentry}
+
+\section{Interests}
+\begin{onecolentry}
+    Technology, Mathematics, Music, Machine Learning
+\end{onecolentry}
+
+\end{document}

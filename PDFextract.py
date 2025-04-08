@@ -11,6 +11,6 @@ class PDFextract:
 
 if __name__ == "__main__":
     extract = PDFextract()
-    data = extract.extract("bhavna_resume.pdf")
-    with open("bhavna_output.txt", "w") as f:
+    data = extract.extract("charles_resume.pdf")
+    with open("charles_output.txt", "w") as f:
         f.write(data)
