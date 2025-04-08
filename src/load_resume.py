@@ -2,7 +2,7 @@ import yaml
 import subprocess
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
-from config.variables import TEX_DIR, TEMPLATE_DIR, PDF_DIR
+from config import TEX_DIR, TEMPLATE_DIR, PDF_DIR
 from shutil import copy
 
 

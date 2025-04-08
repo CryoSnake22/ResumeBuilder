@@ -1,4 +1,4 @@
-from config.variables import DATA_DIR
+from config import DATA_DIR
 from pdfminer.high_level import extract_text
 
 

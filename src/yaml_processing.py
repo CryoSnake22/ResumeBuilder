@@ -1,6 +1,6 @@
 import yaml
 import openai
-from config.variables import BASE_DIR
+from config import BASE_DIR
 from openai import OpenAI
 from dotenv import load_dotenv
 import os

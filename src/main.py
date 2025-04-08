@@ -1,4 +1,4 @@
-from config.variables import DATA_DIR, ASSET_DIR
+from config import DATA_DIR, ASSET_DIR
 from load_resume import RenderToLaTeX, compile_pdf
 from pdf_preprocessing import parse_pdf
 from yaml_processing import generate_yaml
