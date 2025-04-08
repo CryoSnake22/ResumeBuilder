@@ -1,7 +1,10 @@
-from config import DATA_DIR, ASSET_DIR
+from config.variables import DATA_DIR, ASSET_DIR
 from load_resume import RenderToLaTeX, compile_pdf
 from pdf_preprocessing import parse_pdf
 from yaml_processing import generate_yaml
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def main():
@@ -16,9 +19,11 @@ def main():
     yaml_path = generate_yaml(txt_path)
 
     # We have YAML data and we want to put it to LaTeX
+
     template_name = "template1.tex"
     data_path = DATA_DIR / "data.yaml"
     tex_path = RenderToLaTeX(data_path, template_name)
+
     # We want to Render the LaTeX to PDF
     compile_pdf(tex_path)
 

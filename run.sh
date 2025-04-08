@@ -1,3 +1,1 @@
-python3 load_resume.py
-tectonic ./outputs/output.tex
-open ./outputs/output.pdf
+python3 src/main.py
