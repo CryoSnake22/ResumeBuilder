@@ -2,9 +2,10 @@ from config import DATA_DIR
 from pdfminer.high_level import extract_text
 
 
-def parse_pdf(pdf_path, pdf_name):
+def parse_pdf(pdf_path, filename):
+    txt_path = DATA_DIR / f"{filename}.txt"
+
     text = extract_text(pdf_path)
-    txt_path = DATA_DIR / pdf_name
     with open(txt_path, "w") as f:
         f.write(text)
     print(f"output pdf contents at: {txt_path}")

@@ -6,9 +6,9 @@ from config import TEX_DIR, TEMPLATE_DIR, PDF_DIR
 from shutil import copy
 
 
-def RenderToLaTeX(data_path, template_name) -> Path:
+def RenderToLaTeX(yaml_path, filename, template_name) -> Path:
     # Set up the Jinja environment with custom delimiters that won't conflict with LaTeX
-    tex_output = TEX_DIR / "output.tex"
+    tex_output = TEX_DIR / f"{filename}.tex"
 
     env = Environment(
         loader=FileSystemLoader(TEMPLATE_DIR),
@@ -27,7 +27,8 @@ def RenderToLaTeX(data_path, template_name) -> Path:
     template = env.get_template(template_name)
 
     # Load the YAML data into a dictionary
-    with open(data_path, "r") as f:
+    print(yaml_path)
+    with open(yaml_path, "r") as f:
         data = yaml.safe_load(f)
 
     # Render the LaTeX template using the YAML data
