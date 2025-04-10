@@ -29,3 +29,11 @@ brew install tectonic
 - [ ] Start working on an interface to interact with this. And a way to manage current resumes and track jobs you generated resumes for.
 - [ ] We're also gonna need different names for different resumes.
 - [ ] Add YAML validation step between generation and rendering.
+- [ ] Try to make it so that you dont get experience descriptions cutting in the middle of the page
+
+- [ ] Add resume logging and tracking so it keeps track of what got sent whereo
+
+🗂️ “You sent this version of your resume to Medi Spa Ottawa on April 1st. Here’s what it emphasized: …”
+
+- [ ] Add Awards SECTION
+- [ ] Add resume type metadata

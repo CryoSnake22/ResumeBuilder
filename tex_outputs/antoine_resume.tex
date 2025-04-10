@@ -1,0 +1,265 @@
+\documentclass[10pt, letterpaper]{article}
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=2 cm,
+    bottom=2 cm,
+    left=2 cm,
+    right=2 cm,
+    footskip=1.0 cm
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage{etoolbox}
+\usepackage[
+    pdftitle={Antoine Fradkin},
+    pdfauthor={Antoine Fradkin},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+% Pre-define the environments before document starts
+\makeatletter
+\newenvironment{highlights}{%
+    \begin{itemize}[
+        topsep=0.10 cm,%
+        parsep=0.10 cm,%
+        partopsep=0pt,%
+        itemsep=0pt,%
+        leftmargin=0.4 cm + 10pt%
+    ]
+}{%
+    \end{itemize}%
+}
+
+\newenvironment{onecolentry}{%
+    \begin{adjustwidth}{0.2 cm}{0.2 cm}%
+}{%
+    \end{adjustwidth}%
+}
+
+% --- New definition of twocolentry using minipages ---
+\newenvironment{twocolentry}[1]{%
+    \begin{onecolentry}%
+    \def\twocolentryarg{#1}%
+    \noindent
+    \begin{minipage}[t]{0.68\textwidth} % Left column (wraps long text)
+}{%
+    \end{minipage}\hfill%
+    \begin{minipage}[t]{0.30\textwidth} % Right column (aligned content)
+      \raggedleft\twocolentryarg
+    \end{minipage}%
+    \vspace{0.2cm}%
+    \end{onecolentry}%
+}
+% --- End new definition ---
+
+\newenvironment{header}{%
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}%
+}{%
+    \par\kern\topsep%
+}
+\makeatother
+
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0cm}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3 cm}{0.2 cm}
+\renewcommand\labelitemi{$\circ$}
+
+\newcommand{\placelastupdatedtext}{%
+  \AddToShipoutPictureFG*{%
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{\small\color{gray}\textit{Last updated in April 2025}}}}
+    }%
+  }%
+
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{%
+  \hrefWithoutArrow{#1}{%
+    \ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}%
+  }%
+}
+
+\begin{document}
+\placelastupdatedtext
+\newcommand{\AND}{\leavevmode\unskip
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{}
+
+% Header with Name and Contact Information
+\begin{header}
+    \textbf{\fontsize{24 pt}{24 pt}\selectfont Antoine Fradkin}
+
+    \vspace{0.3 cm}
+
+    \normalsize
+    \mbox{{\color{black}\footnotesize\faMapMarker*}\hspace*{0.13cm}495 avenue Beaumont, app 316, Montréal, QC H3N 1V4}%
+    \AND
+    \mbox{\hrefWithoutArrow{mailto:antoine.fradkin@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}antoine.fradkin@gmail.com}}%
+    \AND
+    \mbox{\hrefWithoutArrow{tel:581-996-9653}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}581-996-9653}}%
+\end{header}
+
+\vspace{0.3 cm - 0.3 cm}
+
+\section{Summary}
+\begin{onecolentry}
+    I am a versatile jazz-trained violinist with a passion for performing diverse musical styles and captivating audiences. Known for my improvisational skills and engaging performances, I aim to advance my music career by gaining recognition both on social media and in public performances.
+
+\end{onecolentry}
+
+\section{Education}
+\begin{twocolentry}{%
+\textit{2021 }\textit{} \\[0.1cm]
+\textit{Montréal}%
+}
+    \textbf{Université de Montréal }\\
+    \textit{Baccalauréat en violon jazz }\end{twocolentry}
+\vspace{0.10 cm}
+\begin{twocolentry}{%
+\textit{2019 }--\textit{2021} \\[0.1cm]
+\textit{Québec}%
+}
+    \textbf{Cégep de Ste-Foy }\\
+    \textit{Interpretation violin jazz }\end{twocolentry}
+\vspace{0.10 cm}
+\begin{twocolentry}{%
+\textit{2017 }--\textit{2019} \\[0.1cm]
+\textit{Québec}%
+}
+    \textbf{École secondaire de la Seigneurie }\\
+    \textit{Musique-études program }\end{twocolentry}
+\vspace{0.10 cm}
+
+\section{Experience}
+\begin{twocolentry}{%
+\textit{October 2023 }\textit{} \\[0.1cm]
+\textit{Montréal, QC}%
+}
+    \textbf{Busboy }\\
+    \textit{Restaurant Le Piment Rouge }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{twocolentry}{%
+\textit{June 2023 }--\textit{July 2023} \\[0.1cm]
+\textit{Orlando, USA}%
+}
+    \textbf{Member }\\
+    \textit{Blueberry Grass Band }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Delivered dynamic performances at Disney's Epcot on the Mill Stage, enhancing cultural experiences for diverse audiences
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{twocolentry}{%
+\textit{May 2022 }--\textit{2023} \\[0.1cm]
+\textit{Montréal, QC}%
+}
+    \textbf{Receptionist }\\
+    \textit{Hotel Ruby Foo’s }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{twocolentry}{%
+\textit{February 2022 }--\textit{2023} \\[0.1cm]
+\textit{Québec}%
+}
+    \textbf{Subsidy Recipient }\\
+    \textit{Government of Québec }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Successfully secured Jeunes Volontaires Subsidy to create and promote musical content online, expanding reach and audience engagement
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{twocolentry}{%
+\textit{2019 }--\textit{2021} \\[0.1cm]
+\textit{Québec, QC}%
+}
+    \textbf{Private Violin Teacher }\\
+    \textit{ }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Provided personalized violin instruction, fostering musical skills and inspiring student confidence
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+\begin{twocolentry}{%
+\textit{2017 }--\textit{2022} \\[0.1cm]
+\textit{Vieux-Québec and Vieux-Montréal}%
+}
+    \textbf{Public Entertainer }\\
+    \textit{ }
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Engaged with diverse audiences as a busker in Old Quebec City and Old Montreal, enhancing the cultural atmosphere with live music
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.2 cm}
+
+
+
+
+\section{Languages}
+\begin{onecolentry}
+    \begin{highlights}
+        \item French -- Fluent
+        \item English -- Fluent
+        \item Russian -- Fluent
+    \end{highlights}
+\end{onecolentry}
+
+
+\end{document}

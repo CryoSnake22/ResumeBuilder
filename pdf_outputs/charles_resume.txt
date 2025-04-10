@@ -1,0 +1,78 @@
+Last updated in April 2025
+
+Charles-Antoine Pouliot
+a capdev22@gmail.comЛ 581-996-7900
+
+Summary
+Innovative software engineer passionate about leveraging technology to improve user experiences. Proficient in
+modern web development frameworks like Next.js and React, with a strong foundation in mathematics and an
+eagerness to solve complex problems. Seeking opportunities to contribute cutting-edge solutions in a collaborative
+environment.
+
+Education
+University of Ottawa
+Bachelor’s of Mathematics
+Cégep de Sainte-Foy
+Music, Jazz piano
+
+Experience
+Web developer/designer
+Laurier Computers
+
+September 2024
+Ottawa, ON
+
+◦ Enhanced the company’s website with an innovative design focused on optimizing user experience.
+◦ Developed a scalable Next.js app using React, improving client interaction eﬀiciency.
+◦ Implemented user feedback loops, enhancing technical support resolution times and customer satisfaction.
+Server and Concierge
+Amica the Glebe
+
+December 2023 –August 2024
+Ottawa, ON
+
+◦ Customized dining experiences for residents, improving satisfaction scores.
+◦ Transitioned to concierge role, eﬀiciently handling key administrative functions and improving service delivery.
+◦ Facilitated communication between residents, families, and management, enhancing community engagement.
+Server
+Alto restaurant
+
+December 2022 –August 2023
+Montreal, QC
+
+◦ Utilized the Maitre’D POS system effectively, processing an average of 200 orders per day.
+◦ Strengthened customer relations by delivering exceptional service experiences consistently.
+Technician and Customer Support
+MontVR
+
+September 2020 –June 2022
+
+◦ Conducted repairs on VR headsets, ensuring operational excellence and longevity.
+◦ Diagnosed and resolved hardware/software issues, minimizing downtime and enhancing system performance.
+◦ Authored comprehensive documentation on bugs and internal procedures, aiding in knowledge sharing.
+◦ Improved operational eﬀiciency across the company by scripting to reduce hardware failure rates.
+◦ Provided expert customer assistance via the Zammad issue tracking system, improving support processes.
+◦ Guided customers in adopting virtual reality technology, facilitating increased user adoption.
+
+Skills
+Languages: Lua, Javascript (Web Development), C++
+Frameworks: React, Next.js
+Tools: Git, Linux, Shell scripting, Neovim
+
+Certifications
+Comptia A+ Certification
+
+2024
+
+Machine Learning Certification (Stanford)
+
+2025
+
+Languages
+◦ French
+◦ English
+
+Interests
+Technology, Mathematics, Music, Machine Learning
+
+

@@ -16,61 +16,55 @@ education:
     school: Hindu College, Delhi University
     location: Delhi, India
 
-summary: |
-  Dedicated administrative and social media professional with strong expertise in optimizing workflow efficiency and enhancing customer engagement. Proven track record in improving client retention and increasing online presence through strategic planning and execution. Adept at leveraging legal education in administrative roles to ensure compliance and operational excellence.
-
 experience:
-  - title_override: Administrative \& Social Media Specialist
-    title: Administrative Coordinator \& Social Media Manager
+  - title: Administrative Coordinator \& Social Media Manager
+    title_override: Administrative and Digital Engagement Specialist
     company: Medi Spa Ottawa
     location: Ottawa, Ontario
     start_date: May 2023
     bullets:
-      - Oversee and manage daily administrative operations, ensuring seamless coordination between departments and improving workflow efficiency by 30\%.
-      - Streamlined technician schedules, enhancing appointment booking efficiency and increasing service delivery by 30\%.
-      - Developed and implemented a customer service strategy that increased client retention by 30\% through proactive issue resolution and personalized service.
-      - Spearheaded a data-driven social media strategy that boosted engagement by 50\% and improved online appointment bookings by 20\%.
-      - Maintain and update the company’s website, ensuring accessibility, accuracy, and enhanced client interface.
+      - Oversee and manage daily administrative operations, ensuring seamless department coordination to optimize workflow and enhance office productivity.
+      - Coordinate technician schedules, appointment bookings, and front desk operations, boosting service efficiency by 30\% through streamlined processes.
+      - Implemented a customer-centric service strategy that improved client retention by 30\% via efficient response and effective issue resolution.
+      - Spearheaded a dynamic social media strategy, increasing engagement by 50\% and driving online appointment bookings up by 20\%.
+      - Maintain and update the company’s website to ensure service accessibility and accurate information presentation.
 
-  - title_override: Administrative Specialist
-    title: Administrative Coordinator (2-Month Contract)
+  - title: Administrative Coordinator (2-Month Contract)
+    title_override: Administrative Support Specialist
     company: Athens Rugs Ltd.
     location: Ottawa, Ontario
     start_date: December 2023
     end_date: January 2024
     bullets:
-      - Managed comprehensive office operations, including documentation, scheduling, and data entry, increasing workflow efficiency by 20\%.
-      - Optimized order processing by effectively handling customer inquiries, reducing processing time by 15\%.
-      - Conducted financial record-keeping and ensured strict compliance with company policies and industry standards.
+      - Managed comprehensive office operations, including documentation, scheduling, and data entry, significantly enhancing workflow efficiency.
+      - Processed customer inquiries and coordinated seamless order fulfillment, reducing processing time by 15\%.
+      - Assisted in meticulous financial record-keeping, ensuring strict compliance with company policies.
 
-  - title_override: Research and Event Coordinator
-    title: Research Assistant to Dr. Anita Yadav, Assistant Sr. Professor
+  - title: Research Assistant to Dr. Anita Yadav, Assistant Sr. Professor
     company: CLC, Delhi University
     start_date: January 2022
     end_date: August 2022
     bullets:
-      - Coordinated a government-funded research project with the Ministry of Urban Affairs, driving successful project milestones.
-      - Organized academic events, increasing institutional engagement and enhancing research visibility.
+      - Conducted detailed research and administrative coordination for a government-funded project by the Ministry of Urban Affairs, enhancing project delivery.
+      - Organized and facilitated academic seminars and conferences, bolstering institutional engagement and outreach.
 
-  - title_override: Legal Administrative Intern
-    title: Legal Intern
+  - title: Legal Intern
     company: Adv. Balendu Shekhar (Additional Standing Counsel, GOI)
     location: Delhi, India
     start_date: September 2021
     end_date: December 2021
     bullets:
-      - Managed critical case documentation and arbitration disputes, supporting efficient legal resolution for the National Highway Authority of India (NHAI).
-      - Conducted comprehensive legal research, streamlining case preparation and enhancing legal strategies.
+      - Coordinated case management and documentation for arbitration disputes involving the National Highway Authority of India (NHAI), optimizing legal workflows.
+      - Conducted comprehensive legal research using SCC, Manu Patra, and LexisNexis, bolstering case preparation accuracy and efficiency.
 
-  - title_override: Legal Research Intern
-    title: Legal Intern
+  - title: Legal Intern
     company: Hon’ble Madame Justice Sangita Dhingra Sehgal (President, SCDRC)
     location: Delhi, India
     start_date: March 2021
     end_date: June 2021
     bullets:
-      - Organized and managed legal documentation for consumer rights litigation, ensuring precise case filing and database accuracy.
-      - Maintained digital legal databases, facilitating updated case progress management on government portals.
+      - Managed intricate legal documentation, case filing, and research support for consumer rights litigation, improving case turnaround time.
+      - Maintained online legal databases and updated case progress on government portals to ensure current and accurate legal records.
 
 skills:
   tools:
@@ -81,10 +75,15 @@ skills:
     - Administrative Coordination
     - Project Management
     - Customer Relations
-    - Social Media Strategy and Execution
+    - Digital Marketing Strategies
+  programming_languages:
+    - Social Media \& Marketing
 
 languages:
   - language: English
     level: Fluent
   - language: Hindi
     level: Fluent
+
+summary: |
+  Results-oriented professional with expertise in administrative coordination and digital engagement, demonstrating a strong ability to optimize workflow efficiency and enhance client relations. Proven success in implementing effective social media strategies that bolster customer engagement and drive business growth. Adept at managing comprehensive office operations and maintaining high standards of service delivery in fast-paced environments.
