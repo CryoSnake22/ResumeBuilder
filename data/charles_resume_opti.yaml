@@ -5,10 +5,7 @@ contact:
   phone: 581-996-7900
 
 summary: |
-  Innovative software engineer passionate about leveraging technology to improve user experiences.
-  Proficient in modern web development frameworks like Next.js and React, with a strong foundation 
-  in mathematics and an eagerness to solve complex problems. Seeking opportunities to contribute 
-  cutting-edge solutions in a collaborative environment.
+  Adaptable software engineer passionate about crafting robust, user-centric web applications with React and Next.js. Experienced in full-stack development, responsive UI/UX design, and troubleshooting technical challenges. Ready to drive value on dynamic engineering teams by applying a strong foundation in modern web development, problem-solving, and collaborative support.
 
 education:
   - degree: Bachelor’s of Mathematics
@@ -17,52 +14,49 @@ education:
     school: Cégep de Sainte-Foy
 
 experience:
-  - title_override: Frontend Developer
-    title: Web developer/designer
+  - title: Web developer/designer
+    title_override: Front-End Web Engineer
     company: Laurier Computers
     location: Ottawa, ON
     start_date: September 2024
     bullets:
-      - Enhanced the company’s website with an innovative design focused on optimizing user experience.
-      - Developed a scalable Next.js app using React, improving client interaction efficiency.
-      - Implemented user feedback loops, enhancing technical support resolution times and customer satisfaction.
-  
-  - title_override: Customer Experience Specialist
-    title: Server and Concierge
+      - Built and maintained a scalable, responsive company website using Next.js and React, focused on high-quality user experience and accessibility.
+      - Translated user requirements into functional UI components, improving usability and navigation for over 300 monthly site visitors.
+      - Integrated Git-based version control to streamline code reviews and deployment cycles, reducing update turnaround time by 25\%.
+      - Led troubleshooting of cross-browser issues and optimized frontend performance, resulting in faster page load times.
+  - title: Server and Concierge
     company: Amica the Glebe
     location: Ottawa, ON
     start_date: December 2023
     end_date: August 2024
     bullets:
-      - Customized dining experiences for residents, improving satisfaction scores.
-      - Transitioned to concierge role, efficiently handling key administrative functions and improving service delivery.
-      - Facilitated communication between residents, families, and management, enhancing community engagement.
-
+      - Enhanced resident satisfaction by tailoring dining and hospitality services, receiving positive feedback from both residents and families.
+      - Took on additional administrative duties as Concierge, efficiently managing schedules and information flow for over 50 residents.
+      - Facilitated communication between residents, families, and management, resolving concerns quickly and maintaining a high standard of care.
   - title: Server
     company: Alto restaurant
     location: Montreal, QC
     start_date: December 2022
     end_date: August 2023
     bullets:
-      - Utilized the Maitre'D POS system effectively, processing an average of 200 orders per day.
-      - Strengthened customer relations by delivering exceptional service experiences consistently.
-
-  - title: Technician and Customer Support
+      - Streamlined order processing with Maitre'D POS, handling up to 200 online and phone orders per day while maintaining accuracy.
+      - Enhanced guest experience with attentive, personalized service in a high-volume environment.
+  - title: Technician and Customer support
+    title_override: Technical Support Specialist
     company: MontVR
     start_date: September 2020
     end_date: June 2022
     bullets:
-      - Conducted repairs on VR headsets, ensuring operational excellence and longevity.
-      - Diagnosed and resolved hardware/software issues, minimizing downtime and enhancing system performance.
-      - Authored comprehensive documentation on bugs and internal procedures, aiding in knowledge sharing.
-      - Improved operational efficiency across the company by scripting to reduce hardware failure rates.
-      - Provided expert customer assistance via the Zammad issue tracking system, improving support processes.
-      - Guided customers in adopting virtual reality technology, facilitating increased user adoption.
+      - Diagnosed and repaired VR hardware and computer systems, minimizing downtime for customers.
+      - Developed and wrote documentation on bug fixing and troubleshooting procedures, improving onboarding for new technicians.
+      - Increased operational efficiency by scripting automation tools in Lua and shell, reducing hardware failure by 15\%.
+      - Managed customer support tickets using Zammad, resolving technical issues and escalating when necessary, which helped achieve a faster resolution rate.
+      - Delivered clear technical guidance for users adapting to virtual reality technology, improving client adoption and satisfaction.
 
 skills:
   programming_languages:
-    - Lua
     - Javascript (Web Development)
+    - Lua
     - C++
   frameworks:
     - React
@@ -88,3 +82,6 @@ interests:
   - Mathematics
   - Music
   - Machine Learning
+
+tone: innovative
+industry: software engineering

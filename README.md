@@ -25,6 +25,7 @@ brew install tectonic
 
 - [ ] Add scraping to get job descriptions
 - [ ] Add "similarity" meter to check how qualified / good of a fit you are for a job
+
 - [ ] Find resumes to test how resistant it is and figure out good ways to test tone and other things
 - [ ] Start working on an interface to interact with this. And a way to manage current resumes and track jobs you generated resumes for.
 - [ ] We're also gonna need different names for different resumes.

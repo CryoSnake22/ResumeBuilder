@@ -11,17 +11,16 @@ load_dotenv()
 def main():
     # Convert the pdf to text
     # most likely temporary
+    #
     filename = input("Please chose a pdf: ")
-
     pdf_path = ASSET_DIR / f"{filename}.pdf"
-
     txt_path = parse_pdf(pdf_path, filename)
-
     job_description = None
     # with open(DATA_DIR / "job_description1.txt") as f:
     # job_description = f.read()
 
     # If there isnt a yaml file yet, you generate one and optimize it
+
     if not (os.path.isfile(DATA_DIR / f"{filename}.yaml")):
         print("Generating yaml file")
         yaml_path = generate_yaml(txt_path, filename)

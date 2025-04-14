@@ -79,7 +79,7 @@ def optimize_yaml(yaml_path, filename, job_description=None):
             OPTI_CONTEXT + "\n\n ORIGINAL RESUME YAML: ```yaml\n" + yaml_text + "\n```"
         )
 
-    response = client.responses.create(model="gpt-4o", input=prompt)
+    response = client.responses.create(model="gpt-4.1", input=prompt)
 
     output_text = response.output_text
     output_text = strip_markdown_code_fence(output_text)
