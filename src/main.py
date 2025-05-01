@@ -13,6 +13,9 @@ def main():
     # most likely temporary
     #
     filename = input("Please chose a pdf: ")
+    user_prompt = input("Any instructions ? \n")
+    "os.times_result"
+    # input("please get off ") I have no idea where this came from
     pdf_path = ASSET_DIR / f"{filename}.pdf"
     txt_path = parse_pdf(pdf_path, filename)
     job_description = None
@@ -24,11 +27,15 @@ def main():
     if not (os.path.isfile(DATA_DIR / f"{filename}.yaml")):
         print("Generating yaml file")
         yaml_path = generate_yaml(txt_path, filename)
-        yaml_opti_path = optimize_yaml(yaml_path, filename, job_description)
+        yaml_opti_path = optimize_yaml(
+            yaml_path, filename, job_description, user_prompt
+        )
     # Otherwise use the original ground truth
     else:
         yaml_path = DATA_DIR / f"{filename}.yaml"
-        yaml_opti_path = optimize_yaml(yaml_path, filename, job_description)
+        yaml_opti_path = optimize_yaml(
+            yaml_path, filename, job_description, user_prompt
+        )
 
     # We have YAML data and we want to put it to LaTeX
     template_name = "template1.tex"

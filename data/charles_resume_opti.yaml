@@ -5,58 +5,58 @@ contact:
   phone: 581-996-7900
 
 summary: |
-  Adaptable software engineer passionate about crafting robust, user-centric web applications with React and Next.js. Experienced in full-stack development, responsive UI/UX design, and troubleshooting technical challenges. Ready to drive value on dynamic engineering teams by applying a strong foundation in modern web development, problem-solving, and collaborative support.
+  Passionate software engineer and AI enthusiast with a keen interest in machine learning. Eager to leverage my skills in a dynamic environment to drive innovation and solve complex problems.
 
 education:
-  - degree: Bachelor’s of Mathematics
+  - degree: Dual Bachelor's Degree, Honours Mathematics and Honours Computer Science (Data Science)
     school: University of Ottawa
   - degree: Music, Jazz piano
     school: Cégep de Sainte-Foy
 
 experience:
-  - title: Web developer/designer
-    title_override: Front-End Web Engineer
+  - title: Web Developer and Designer
+    title_override: Frontend Developer
     company: Laurier Computers
     location: Ottawa, ON
     start_date: September 2024
     bullets:
-      - Built and maintained a scalable, responsive company website using Next.js and React, focused on high-quality user experience and accessibility.
-      - Translated user requirements into functional UI components, improving usability and navigation for over 300 monthly site visitors.
-      - Integrated Git-based version control to streamline code reviews and deployment cycles, reducing update turnaround time by 25\%.
-      - Led troubleshooting of cross-browser issues and optimized frontend performance, resulting in faster page load times.
+      - Designed and developed a scalable Next.js app, enhancing user experience and interface using React.
+      - Improved customer engagement through effective website design.
+      - Provided efficient technical support, resolving customer issues promptly.
+
   - title: Server and Concierge
     company: Amica the Glebe
     location: Ottawa, ON
     start_date: December 2023
     end_date: August 2024
     bullets:
-      - Enhanced resident satisfaction by tailoring dining and hospitality services, receiving positive feedback from both residents and families.
-      - Took on additional administrative duties as Concierge, efficiently managing schedules and information flow for over 50 residents.
-      - Facilitated communication between residents, families, and management, resolving concerns quickly and maintaining a high standard of care.
+      - Delivered tailored dining experiences that improved resident satisfaction.
+      - Promoted to concierge in May 2024, managing administrative tasks and enhancing communication between residents and management.
+
   - title: Server
     company: Alto restaurant
     location: Montreal, QC
     start_date: December 2022
     end_date: August 2023
     bullets:
-      - Streamlined order processing with Maitre'D POS, handling up to 200 online and phone orders per day while maintaining accuracy.
-      - Enhanced guest experience with attentive, personalized service in a high-volume environment.
-  - title: Technician and Customer support
-    title_override: Technical Support Specialist
+      - Utilized the Maitre'D POS system effectively to manage high-volume orders.
+      - Ensured a positive customer experience for diners.
+
+  - title: Technician and Customer Support Specialist
+    title_override: Support Technician
     company: MontVR
     start_date: September 2020
     end_date: June 2022
     bullets:
-      - Diagnosed and repaired VR hardware and computer systems, minimizing downtime for customers.
-      - Developed and wrote documentation on bug fixing and troubleshooting procedures, improving onboarding for new technicians.
-      - Increased operational efficiency by scripting automation tools in Lua and shell, reducing hardware failure by 15\%.
-      - Managed customer support tickets using Zammad, resolving technical issues and escalating when necessary, which helped achieve a faster resolution rate.
-      - Delivered clear technical guidance for users adapting to virtual reality technology, improving client adoption and satisfaction.
+      - Repaired and maintained VR headsets and controllers, reducing downtime.
+      - Authored comprehensive documentation for troubleshooting and procedures.
+      - Enhanced operational efficiency by developing scripts to minimize hardware stress.
+      - Supported customer understanding of virtual reality technology, increasing satisfaction.
 
 skills:
   programming_languages:
-    - Javascript (Web Development)
     - Lua
+    - JavaScript (Web Development)
     - C++
   frameworks:
     - React
@@ -66,6 +66,9 @@ skills:
     - Linux
     - Shell scripting
     - Neovim
+  additional_skills:
+    - Machine Learning
+    - AI Development
 
 certifications:
   - name: Comptia A+ Certification
@@ -83,5 +86,8 @@ interests:
   - Music
   - Machine Learning
 
-tone: innovative
-industry: software engineering
+tone: |
+  Innovative and driven with a focus on blending technology and creativity to solve complex challenges.
+
+industry: |
+  Technology and Software Development

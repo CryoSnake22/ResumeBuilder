@@ -61,25 +61,17 @@ def generate_yaml(txt_path, filename):
     return yaml_path
 
 
-def optimize_yaml(yaml_path, filename, job_description=None):
+def optimize_yaml(yaml_path, filename, job_description=None, user_prompt=None):
     with open(yaml_path, "r") as f:
         yaml_text = f.read()
-    prompt = ""
+    prompt = OPTI_CONTEXT
     if job_description:
-        prompt = (
-            OPTI_CONTEXT
-            + "JOB DESCRIPTION: \n\n"
-            + job_description
-            + "\n\n ORIGINAL RESUME YAML: ```yaml\n"
-            + yaml_text
-            + "\n```"
-        )
-    else:
-        prompt = (
-            OPTI_CONTEXT + "\n\n ORIGINAL RESUME YAML: ```yaml\n" + yaml_text + "\n```"
-        )
+        prompt += "JOB DESCRIPTION: \n\n" + job_description
+    if user_prompt:
+        prompt += "USER PROMPT: \n\n" + user_prompt
+    prompt += "\n\n ORIGINAL RESUME YAML: ```yaml\n" + yaml_text + "\n```"
 
-    response = client.responses.create(model="gpt-4.1", input=prompt)
+    response = client.responses.create(model="gpt-4o", input=prompt)
 
     output_text = response.output_text
     output_text = strip_markdown_code_fence(output_text)
